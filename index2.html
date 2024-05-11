@@ -1,0 +1,310 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+body{
+background-color:#040402;
+ font-family: "Jost", sans-serif;
+}
+
+.card{
+    background: #191919;
+    padding: 2rem;
+width:90%;
+border-radius:0px;
+cursor:pointer;
+top:0;
+transition:0.4s all;
+}
+.card h4{
+color:white;
+}
+
+.card p{
+color:grey;
+}
+
+.card1::before{
+content:" ";
+position:absolute;
+background-color:red;
+width:70%;
+height:70%;
+top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+
+.card3::before{
+content:" ";
+position:absolute;
+background-color:red;
+width:70%;
+height:70%;
+bottom: -15px;
+  right: -15px;
+  z-index: -1;
+}
+.card:hover{
+background-color:red;
+top:-20;
+}
+.card:hover > p{
+color:white;
+}
+.card1:hover:before{
+display:none;
+}
+
+.card3:hover:before{
+display:none;
+}
+
+.getstarted{
+color:white;
+border:2px solid red;
+}
+.getstarted:hover{
+background-color:red;
+color:white;
+}
+
+.navbar a{
+color:white !important;
+font-weight:bold;
+
+}
+.nav-item a{
+font-size:14px;
+}
+
+.marginleft{
+margin-left:10px;
+}
+
+.navbar-brand{
+font-weight:bold;
+}
+
+.heading div{
+font-size:4rem;
+color:red;
+font-weight:bold;
+}
+.heading p{
+color:grey;
+}
+
+.rating{
+background-color:#111111;
+padding-top:50px;
+padding-bottom:50px;
+}
+
+.rating .head{
+font-size:2rem;
+font-weight:bold;
+margin-bottom:30px;
+color:white;
+text-align:center;
+}
+
+.rating p{
+padding:0px 250px;
+color:grey;
+text-align:center;
+margin-bottom:50px;
+}
+
+.rating h5{
+color:white;
+}
+</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- navigation section -->
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">SolutionM4</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Testimonials</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+		
+			<li class="nav-item d-flex">
+			
+			                <a class="nav-link" href="#">
+								<i class="fa fa-cog"></i>
+							</a>
+							<a class="nav-link" href="#">
+							<i class="fa fa-cog"></i>
+							</a>
+							<a class="nav-link" href="#">
+							<i class="fa fa-cog"></i>
+							</a>
+									
+			</li>
+			
+			<li class="nav-item">
+			                <button class="btn getstarted marginleft" ><i class="fa fa-cog"></i> GET STARTED</button>		
+			            </li>
+		
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<!-- nav end -->
+
+
+<!-- hero section -->
+
+<div class="container">
+	<div class="row align-items-center">
+			<div class="col-md-6 heading">
+			<div >WEB<br>SOLUTION<br>COMPANY</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+ <button class="btn getstarted" ><i class="fa fa-cog"></i> GET STARTED</button>
+
+			</div>
+			<div class="col-md-6">
+			<img src="images/01.jpg " class="img-fluid">
+			</div>
+	</div>
+
+</div>
+
+<!-- hero section end -->
+
+
+
+<!-- Card Section -->
+
+<div class="container mt-5">
+	
+	<div class="row mt-5 mb-5 p-5 ">
+	
+	<div class="col-md-4 text-center d-flex justify-content-center">
+		<div class="card card1">
+			<h4>Digital Marketing</h4>
+			<p>Lorem ipsum dolor sit mattis amet consectetur adipiscing</p>
+			<img src="images/02.jpg"/>
+			
+		</div>
+	</div>
+	
+	<div class="col-md-4 text-center d-flex justify-content-center">
+	
+		<div class="card ">
+			<h4>Digital Marketing</h4>
+			<p>Lorem ipsum dolor sit mattis amet consectetur adipiscing</p>
+			<img src="images/02.jpg"/>
+			
+		</div>
+	
+	</div>
+	
+		<div class="col-md-4 text-center d-flex justify-content-center">
+
+			<div class="card card3">
+			<h4>Digital Marketing</h4>
+			<p>Lorem ipsum dolor sit mattis amet consectetur adipiscing</p>
+			<img src="images/02.jpg"/>		
+		</div>
+	</div>
+	
+	</div>
+	
+</div>
+
+<!-- card section ends -->
+<div class="rating">
+<div class="container" >
+<div class="row text-center">
+<div class="head">Our Company Skills</div>
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nullam placerat est quis lorem tristique aliquet cras quis tristique felis vitae eleifend sapien.</p>
+	<div class="col-md-3">
+	<img src="images/03.jpg" width="100px" height="100px" class="rounded-circle"/>
+	<h5 class="mt-3">Marketing</h5>
+	</div> width="100px" height="100px"
+	<div class="col-md-3">	<img src="images/03.jpg" width="100px" height="100px" class="rounded-circle"/>
+	<h5 class="mt-3">Marketing</h5></div>
+	<div class="col-md-3">	<img src="images/03.jpg" width="100px" height="100px" class="rounded-circle"/>
+	<h5 class="mt-3">Marketing</h5></div>
+	<div class="col-md-3">	<img src="images/03.jpg" width="100px" height="100px" class="rounded-circle"/>
+	<h5 class="mt-3">Marketing</h5></div>
+</div>
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+.card i{
+color:red;
+}
+
+.card:hover i{
+color:white;
+}
+
+
+.card{
+    background: #191919;
+    padding: 2rem;
+width:90%;
+border-radius:0px;
+cursor:pointer;
+top:0;
+transition:0.4s all;
+}
+
+<div class="container-fluid team mt-5">
+	<div class="row ">
+	<div class="head">Team of Experts</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+	
+		
+				
+		
+		
+		<div class=""></div>
+					
+			
+		<div class="col-md-4 d-flex justify-content-center"></div>
+		
+					
+		<div class="col-md-4 d-flex justify-content-center"></div>
+		
+				
+		
+		</div>
+	</div>
+</div>
